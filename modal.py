@@ -17,6 +17,6 @@ class User(BaseModel):
     id: Optional[UUID] = uuid4()
     first_name: str
     last_name: str
-    middle_string:Optional[str]
+    middle_name: Optional[str] = None
     gender:Gender
     roles:List[Role]
